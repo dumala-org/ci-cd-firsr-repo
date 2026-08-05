@@ -10,3 +10,16 @@ jobs:
         run: |
           node -v
           npm -v
+  parallel job-macos:
+    runs-on: macos-latest
+    steps:
+      run:
+        sw_version
+  dependent job:
+    runs-on: windows-latest
+    needs: run-shell-commands
+    steps:
+      - name: echo a string
+        run: echo "hello"
+      - name: error message
+        run: doesnotexist
