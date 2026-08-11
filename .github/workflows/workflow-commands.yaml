@@ -2,7 +2,7 @@ name: workflow commands
 on: [push]
 jobs:
   testing workflow commands:
-  runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: setting a error mesage
         run: echo "::error::display error message as missing semicolon"
