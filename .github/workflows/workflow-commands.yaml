@@ -1,7 +1,7 @@
 name: workflow commands
 on: [push]
 jobs:
-  testing workflow commands:
+  testing-workflow-commands:
     runs-on: ubuntu-latest
     steps:
       - name: setting a error mesage
