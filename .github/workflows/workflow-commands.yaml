@@ -22,4 +22,4 @@ jobs:
       - name: masked value
         run: "::add-mask::Secret message"
       - name: Echo a Secret
-        run: Echo "Secret String"
+        run: Echo "Secret message"
