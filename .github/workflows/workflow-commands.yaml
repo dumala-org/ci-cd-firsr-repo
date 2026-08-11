@@ -3,14 +3,14 @@ on: [push]
 jobs:
   testing workflow commands:
   runs-on: ubuntu-latest
-  steps:
-    - name: setting a error mesage
-      run: echo "::error::display error message as missing semicolon"
-    - name: setting a error message with params
-      run: echo "::error::error title:Error title,file=app.js,line=2,endLine=3,col=5,endColumn=7::Missing Semicolon"      
-    - name: setting a warning message
-      run: echo "::error::error title:Warning title,file=app.js,line=2,endLine=3,col=5,endColumn=7::Missing Semicolon"  
-    - name: setting a notice message
-      run: echo "::error::error title:notice title,file=app.js,line=2,endLine=3,col=5,endColumn=7::Missing Semicolon"  
-    - name: setting a debug message
-      run: echo "::error::error title:Debug title,file=app.js,line=2,endLine=3,col=5,endColumn=7::Missing Semicolon"  
+    steps:
+      - name: setting a error mesage
+        run: echo "::error::display error message as missing semicolon"
+      - name: setting a error message with params
+        run: echo "::error::error title:Error title,file=app.js,line=2,endLine=3,col=5,endColumn=7::Missing Semicolon"      
+      - name: setting a warning message
+        run: echo "::warning::error title:Warning title,file=app.js,line=2,endLine=3,col=5,endColumn=7::Missing Semicolon"  
+      - name: setting a notice message
+        run: echo "::notice::error title:notice title,file=app.js,line=2,endLine=3,col=5,endColumn=7::Missing Semicolon"  
+      - name: setting a debug message
+        run: echo "::debug::error title:Debug title,file=app.js,line=2,endLine=3,col=5,endColumn=7::Missing Semicolon"  
