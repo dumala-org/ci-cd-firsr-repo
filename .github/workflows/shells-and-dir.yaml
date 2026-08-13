@@ -1,5 +1,5 @@
 name: working dir and shells
-on: [PUSH]
+on: [push]
 defaults:
   run:
     shell: bash
