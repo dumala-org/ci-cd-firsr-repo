@@ -21,8 +21,8 @@ jobs:
     steps:
       - name: Display working dir & latest files
         run: |
-          pwd
-          ls -a
+          Get-Location
+          dir
           echo $GITHUB_SHA
           echo $GITHUB_REPOSITORY
           echo $GITHUB_WORKSPACE
