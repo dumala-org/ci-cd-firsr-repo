@@ -16,7 +16,7 @@ jobs:
           echo $env:GITHUB_REPOSITORY
           echo $env:GITHUB_WORKSPACE
       - name: changing working dir
-        working directory: D:\a\ci-cd-firsr-repo
+        working-directory: D:\a\ci-cd-firsr-repo
         run: 
            pwd
   display-wd-info-windows:
