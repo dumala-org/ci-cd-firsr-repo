@@ -18,6 +18,9 @@ jobs:
 
   display-wd-info-windows:
     runs-on: windows-latest
+    defaults:
+      run:
+        shell: pwsh
     steps:
       - name: Display working dir & latest files
         run: |
